@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "safeteefy-api", "safeteefy-api\safeteefy-api.csproj", "{B60972E5-A7C0-4C4D-9538-145BAF53263E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B60972E5-A7C0-4C4D-9538-145BAF53263E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B60972E5-A7C0-4C4D-9538-145BAF53263E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B60972E5-A7C0-4C4D-9538-145BAF53263E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B60972E5-A7C0-4C4D-9538-145BAF53263E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
