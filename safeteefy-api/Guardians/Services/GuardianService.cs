@@ -25,6 +25,11 @@ namespace safeteefy_api.Guardians.Services
             return await _guardianRepository.ListAsync();
         }
 
+        public async Task<Guardian> FindByIdAsync(int id)
+        {
+            return await _guardianRepository.FindByIdAsync(id);
+        }
+
         public async Task<GuardianResponse> SaveAsync(Guardian guardian)
         {
             try

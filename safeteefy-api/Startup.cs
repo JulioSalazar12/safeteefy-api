@@ -18,6 +18,10 @@ using safeteefy_api.Guardians.Services;
 using safeteefy_api.Shared.Domain.Repositories;
 using safeteefy_api.Shared.Persistence.Context;
 using safeteefy_api.Shared.Persistence.Repositories;
+using safeteefy_api.Urgencies.Domain.Repositories;
+using safeteefy_api.Urgencies.Domain.Services;
+using safeteefy_api.Urgencies.Persistence.Repositories;
+using safeteefy_api.Urgencies.Services;
 
 namespace safeteefy_api
 {
@@ -47,6 +51,10 @@ namespace safeteefy_api
             services.AddScoped<IGuardianRepository, GuardianRepository>();
             
             services.AddScoped<IGuardianService, GuardianService>();
+            
+            services.AddScoped<IUrgencyRepository, UrgencyRepository>();
+            
+            services.AddScoped<IUrgencyService, UrgencyService>();
             
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             

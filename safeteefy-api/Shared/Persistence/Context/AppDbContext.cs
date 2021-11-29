@@ -52,6 +52,7 @@ namespace safeteefy_api.Shared.Persistence.Context
             builder.Entity<Urgency>().Property(p=> p.Latitude).IsRequired();
             builder.Entity<Urgency>().Property(p=> p.Longitude).IsRequired();
             builder.Entity<Urgency>().Property(p=> p.ReportedAt);
+            builder.Entity<Urgency>().Property(p=> p.GuardianId).IsRequired();
         }
     }
 }

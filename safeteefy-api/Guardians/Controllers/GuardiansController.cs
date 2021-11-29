@@ -29,6 +29,14 @@ namespace safeteefy_api.Guardians.Controllers
             var resource = _mapper.Map<IEnumerable<Guardian>, IEnumerable<GuardianResource>>(guardians);
             return resource;
         }
+        
+        [HttpGet("{id}")]
+        public async Task<GuardianResource> GetByIdAsync(int id)
+        {
+            var guardian = await _guardianService.FindByIdAsync(id);
+            var resource = _mapper.Map<Guardian, GuardianResource>(guardian);
+            return resource;
+        }
 
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SaveGuardianResource resource)
